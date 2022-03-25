@@ -154,6 +154,10 @@ header #welcome {
     width: 100%;
 }
 
+#mua-sam {
+    height: 500px;
+}
+
 #am-thuc ol, #mua-sam ol {
     text-align: left;
 }
