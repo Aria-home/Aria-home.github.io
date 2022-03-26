@@ -49,23 +49,48 @@ h1 {
     font-size: 5vmax;
 }
 
-h2, h3, h4, a, p, ol {
+h2, h3, h5, a, p, ol {
     font-family: 'Quicksand', sans-serif;
 }
 
-#home img {
+#dropdown {
     display: inline-block;
+}
+#dropdown #icon {
+    position: relative;
+    top: 15px;
+    padding: 0;
+}
+
+#dropdown a:hover {
+    background-color: #777;
+}
+
+.dropdown-content {
+    display: none;
     position: absolute;
-    padding-left: 10px;
-    z-index: 2;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 10px;
+    min-width: 140px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    text-align: left;
+}
+
+#dropdown:hover .dropdown-content{
+    display: block;
 }
 
 nav {
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
     overflow: auto;
     white-space: nowrap;
-    padding: 0 60px;
+    padding: 0 20px;
     margin: 2% 0;
 }
 
@@ -94,7 +119,7 @@ nav input {
     margin-left: 25px;
 }
 
-a:hover {
+nav a:hover {
 background-color: #777;
 }
 
@@ -154,10 +179,6 @@ header #welcome {
     width: 100%;
 }
 
-#mua-sam {
-    height: 500px;
-}
-
 #am-thuc ol, #mua-sam ol {
     text-align: left;
 }
@@ -177,12 +198,61 @@ a {
 }
 
 footer {
-    padding: 10px;
-    position: relative;
-    bottom: 1%;
     margin: 15px 0;
     text-align: center;
     background-color: rgba(0,0,0,0.8);
     color: white;
     width: 100%;
+}
+
+.socials-share {
+    text-align: center;
+}
+
+.socials-share a {
+    padding: 4px 30px;
+    color: #fff;
+    line-height: 1.5em;
+    text-decoration: none;
+    border-radius: 2px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.socials-share span.fa {
+    margin-right: 3px;
+}
+
+.bg-facebook {
+    background: #3a5899;
+}
+
+.bg-facebook:hover, .bg-facebook:focus {
+    background: #1d418d;
+}
+
+.bg-email {
+    background: #dd5348;
+}
+
+.bg-email:hover, .bg-email:focus {
+    background: #ce3f34;
+}
+
+.socials-share, h5 {
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.lienhe {
+    border-top: solid 1px gainsboro;
+    border-bottom: solid 1px gainsboro;
+    margin: 0 15px;
+}
+
+
+.lienhe p {
+    display: inline-block;
+    padding-right: 10px;
 }
